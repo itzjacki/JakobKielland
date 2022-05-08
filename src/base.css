@@ -3,43 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  /* Win98-like styles */
-  .win98-window {
-    @apply p-1 bg-silver win98-outer-border;
+  .example-style {
+    @apply p-1 text-blue-400 bg-black;
   }
-  .win98-button-border {
-    @apply border-black border-l-white shadow-[inset_-1px_-1px_gray] border-t-white border active:border-white active:border-l-black active:border-t-black active:shadow-[inset_1px_1px_gray];
-  }
-  .win98-outer-border {
-    /*Border around the outside of windows*/
-    @apply box-border border border-black border-l-silver border-t-silver;
-  }
-  .win98-inner-border {
-    /*Border around internal portions of windows*/
-    @apply box-border border border-white border-l-silver-dark border-t-silver-dark;
-  }
-  .win98-button {
-    @apply w-4 h-[14px] my-[2px] bg-silver win98-button-border;
-  }
-
-  /* Monitor effect */
-  .monitor-outer-bezel {
-    @apply border-[60px] border-b-[100px] border-[#B9B6AF] box-border bg-[#B9B6AF];
-  }
-  .monitor-inner-bezel {
-    @apply border-[54px] border-x-[#7E7D78] border-y-[#9D9B95] box-border rounded;
-  }
-  .monitor-screen {
-    @apply box-content -mt-2 -ml-2 border-8 border-black rounded-md;
-  }
-  .monitor-screen-mobile {
-    @apply bg-[#008080];
-  }
-}
-
-.win98-outer-border {
-  box-shadow: inset -1px -1px rgb(80, 80, 80), inset 1px 1px white;
-}
-.win98-inner-border {
-  box-shadow: inset -1px -1px rgb(192, 192, 192);
 }
